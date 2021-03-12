@@ -1,0 +1,41 @@
+<web-app>
+
+  <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>loginServlet</servlet-name>
+    <servlet-class>com.maktab.servlets.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>loginServlet</servlet-name>
+    <url-pattern>/loginServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>reserveServlet</servlet-name>
+    <servlet-class>com.maktab.servlets.RoomReserveServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>reserveServlet</servlet-name>
+    <url-pattern>/reserveServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>logoutServlet</servlet-name>
+    <servlet-class>com.maktab.servlets.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>logoutServlet</servlet-name>
+    <url-pattern>/logoutServlet</url-pattern>
+  </servlet-mapping>
+
+  <filter>
+    <filter-name>reserveFilter</filter-name>
+    <filter-class>com.maktab.servlets.RoomReserveFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>reserveFilter</filter-name>
+    <url-pattern>/reserveServlet</url-pattern>
+  </filter-mapping>
+
+</web-app>
