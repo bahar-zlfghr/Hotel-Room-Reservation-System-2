@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Room Reservation System</title>
+</head>
+<body>
+<h1><br>*.*.* In the name of God *.*.*<br></h1>
+<pre>* Welcome to the hotel room reservation system *</pre>
+
+<hr>
+
+<h3># Please select the option you want: </h3>
+<form method="post" action="reserveServlet">
+    <label>
+        <input type="radio" name="mainForm" value="reserve a room">
+        Reserve a room
+    </label>
+
+    <div id="option1" class="forms">
+        <h4># Please complete the form below</h4>
+
+        <label> Start date
+            <input type="text" name="startDate1">
+        </label>
+        <br>
+
+        <br>
+        <label> End date
+            <input type="text" name="endDate1">
+        </label>
+        <br>
+
+        <br>
+        <label> Room capacity
+            <input type="number" name="roomCapacity1">
+        </label>
+        <br>
+    </div>
+
+    <br>
+
+    <label>
+        <input type="radio" name="mainForm" value="change reserve info">
+        Change reserve information
+    </label>
+
+    <div id="option2" class="forms">
+        <h4># Please complete the form below</h4>
+        <label> Reserve Code
+            <input  type="text" name="reserveCode2">
+        </label>
+
+        <div id="changeReserveInfo">
+            <br>
+            <label> Start date
+                <input type="text" name="startDate2">
+            </label>
+            <br>
+
+            <br>
+            <label> End date
+                <input type="text" name="endDate2">
+            </label>
+            <br>
+
+            <br>
+            <label> Room capacity
+                <input type="number" name="roomCapacity2">
+            </label>
+            <br>
+        </div>
+        <br>
+    </div>
+
+    <br>
+
+    <label>
+        <input type="radio" name="mainForm" value="see reserve(s) info">
+        See reserve(s) information
+    </label>
+
+    <div id="option3" class="forms">
+        <h4># Please complete the form below (One of them is enough)</h4>
+
+        <label>
+            <input type="radio" name="nationalCode3" value="seeReserveByNationalCode">
+            National code
+        </label>
+        <br>
+
+        <br>
+        <label> Reserve Code
+            <input type="text" name="reserveCode3">
+        </label>
+        <br>
+    </div>
+
+    <br>
+
+    <label>
+        <input type="radio" name="mainForm" value="cancel reserve">
+        Cancel reserve
+    </label>
+
+    <div id="option4" class="forms">
+        <h4># Please complete the form below</h4>
+
+        <label> Reserve Code
+        <input type="text" name="reserveCode4">
+        </label>
+        <br>
+    </div>
+
+    <br>
+    <input type="submit" value="Submit" id="submitButton">
+</form>
+</body>
+
+<style>
+    body {
+        background-color: beige;
+        font-family: "Lucida Console", "Courier New", monospace;
+        height: auto;
+        width: 900px;
+        margin: auto auto 20px auto;
+    }
+
+    pre {
+        font-family: "Lucida Console", "Courier New", monospace;
+        font-size: 20px;
+        text-align: center
+    }
+
+    h1 {
+        text-align: center;
+        color: crimson;
+        font-size: 25px;
+    }
+
+    hr {
+        width:100%;
+        text-align:center;
+        margin-left:0;
+        color: crimson;
+    }
+
+    input {
+        font-size: large;
+        padding: 5px;
+    }
+
+    div {
+        width: auto;
+        text-align: center;
+        background-color: gainsboro;
+        margin-top: 20px;
+        padding: 10px 0 20px 20px;
+    }
+
+    #changeReserveInfo {
+        text-align: left;
+        width: auto;
+        background-color: darkgray;
+        margin-top: 20px;
+        margin-right: 20px;
+        padding-top: 1px;
+    }
+
+    .forms {
+        text-align: left;
+    }
+
+    #submitButton {
+        font-family: "Lucida Console", "Courier New", monospace;
+        font-size: large;
+    }
+</style>
+</html>
